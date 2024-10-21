@@ -1,0 +1,1477 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../SerendipityAppPrompt/">
+      
+      
+        <link rel="next" href="../promptmaker/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Openai swarm readme - Kaas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#navigation-menu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Kaas" class="md-header__button md-logo" aria-label="Kaas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Kaas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Openai swarm readme
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../SerendipityAppPrompt/" class="md-tabs__link">
+        
+  
+    
+  
+  SerendipityAppPrompt
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Openai swarm readme
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../promptmaker/" class="md-tabs__link">
+        
+  
+    
+  
+  Promptmaker
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Kaas" class="md-nav__button md-logo" aria-label="Kaas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Kaas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SerendipityAppPrompt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SerendipityAppPrompt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Openai swarm readme
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Openai swarm readme
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-code-repositories-users-issues-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search code, repositories, users, issues, pull requests...
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provide-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Provide feedback
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saved-searches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saved searches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Saved searches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-saved-searches-to-filter-your-results-more-quickly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use saved searches to filter your results more quickly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breadcrumbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadcrumbs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="README.md">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latest-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Latest commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      History
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breadcrumbs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadcrumbs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readmemd_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="README.md">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-metadata-and-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      File metadata and controls
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swarm-experimental-educational" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swarm (experimental, educational)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Swarm (experimental, educational)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-swarm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Swarm
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-swarm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Swarm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Swarm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clientrun" class="md-nav__link">
+    <span class="md-ellipsis">
+      client.run()
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="client.run()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arguments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agent Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handoffs-and-updating-context-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handoffs and Updating Context Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Schemas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Streaming
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utils
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Contributors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Contributors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Footer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#footer-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footer navigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../promptmaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Promptmaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p>Skip to content</p>
+<h2 id="navigation-menu">Navigation Menu</h2>
+<p>Toggle navigation </p>
+<p>Sign in </p>
+<ul>
+<li>
+<p>Product </p>
+<ul>
+<li>GitHub Copilot</li>
+</ul>
+</li>
+</ul>
+<p>Write better code with AI </p>
+<pre><code>* Security
+</code></pre>
+<p>Find and fix vulnerabilities </p>
+<pre><code>* Actions
+</code></pre>
+<p>Automate any workflow </p>
+<pre><code>* Codespaces
+</code></pre>
+<p>Instant dev environments </p>
+<pre><code>* Issues
+</code></pre>
+<p>Plan and track work </p>
+<pre><code>* Code Review
+</code></pre>
+<p>Manage code changes </p>
+<pre><code>* Discussions
+</code></pre>
+<p>Collaborate outside of code </p>
+<pre><code>* Code Search
+</code></pre>
+<p>Find more, search less </p>
+<p>Explore 
+    * All features 
+    * Documentation 
+    * GitHub Skills 
+    * Blog </p>
+<ul>
+<li>Solutions </li>
+</ul>
+<p>By company size 
+    * Enterprises 
+    * Small and medium teams 
+    * Startups </p>
+<p>By use case 
+    * DevSecOps 
+    * DevOps 
+    * CI/CD 
+    * View all use cases </p>
+<p>By industry 
+    * Healthcare 
+    * Financial services 
+    * Manufacturing 
+    * Government 
+    * View all industries </p>
+<p>View all solutions </p>
+<ul>
+<li>Resources </li>
+</ul>
+<p>Topics 
+    * AI 
+    * DevOps 
+    * Security 
+    * Software Development 
+    * View all </p>
+<p>Explore 
+    * Learning Pathways 
+    * White papers, Ebooks, Webinars 
+    * Customer Stories 
+    * Partners </p>
+<ul>
+<li>
+<p>Open Source </p>
+<ul>
+<li>GitHub Sponsors</li>
+</ul>
+</li>
+</ul>
+<p>Fund open source developers </p>
+<pre><code>* The ReadME Project
+</code></pre>
+<p>GitHub community articles </p>
+<p>Repositories 
+    * Topics 
+    * Trending 
+    * Collections </p>
+<ul>
+<li>
+<p>Enterprise </p>
+<ul>
+<li>Enterprise platform</li>
+</ul>
+</li>
+</ul>
+<p>AI-powered developer platform </p>
+<p>Available add-ons 
+    * Advanced Security</p>
+<p>Enterprise-grade security features </p>
+<pre><code>* GitHub Copilot
+</code></pre>
+<p>Enterprise-grade AI features </p>
+<pre><code>* Premium Support
+</code></pre>
+<p>Enterprise-grade 24/7 support </p>
+<ul>
+<li>Pricing</li>
+</ul>
+<p>Search or jump to... </p>
+<h1 id="search-code-repositories-users-issues-pull-requests">Search code, repositories, users, issues, pull requests...</h1>
+<p>Search </p>
+<p>Clear </p>
+<p>Search syntax tips </p>
+<h1 id="provide-feedback">Provide feedback</h1>
+<p>We read every piece of feedback, and take your input very seriously.</p>
+<p>Include my email address so I can be contacted</p>
+<p>Cancel  Submit feedback </p>
+<h1 id="saved-searches">Saved searches</h1>
+<h2 id="use-saved-searches-to-filter-your-results-more-quickly">Use saved searches to filter your results more quickly</h2>
+<p>Name</p>
+<p>Query</p>
+<p>To see all available qualifiers, see our documentation. </p>
+<p>Cancel  Create saved search </p>
+<p>Sign in </p>
+<p>Sign up  Reseting focus</p>
+<p>You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert</p>
+<p>{{ message }}</p>
+<p>openai  / swarm Public </p>
+<ul>
+<li>Notifications  You must be signed in to change notification settings</li>
+<li>Fork 1k </li>
+<li>
+<p>Star 12.9k </p>
+</li>
+<li>
+<p>Code </p>
+</li>
+<li>Issues 7 </li>
+<li>Pull requests 4 </li>
+<li>Actions </li>
+<li>Projects 0 </li>
+<li>Security </li>
+<li>Insights </li>
+</ul>
+<p>Additional navigation options</p>
+<ul>
+<li>Code </li>
+<li>Issues </li>
+<li>Pull requests </li>
+<li>Actions </li>
+<li>Projects </li>
+<li>Security </li>
+<li>Insights </li>
+</ul>
+<h2 id="files">Files</h2>
+<p>main</p>
+<ul>
+<li>
+<p>assets</p>
+</li>
+<li>
+<p>examples</p>
+</li>
+<li>
+<p>logs</p>
+</li>
+<li>
+<p>swarm</p>
+</li>
+<li>
+<p>tests</p>
+</li>
+<li>
+<p>.gitignore</p>
+</li>
+<li>
+<p>.pre-commit-config.yaml</p>
+</li>
+<li>
+<p>LICENSE</p>
+</li>
+<li>
+<p>README.md</p>
+</li>
+<li>
+<p>SECURITY.md</p>
+</li>
+<li>
+<p>pyproject.toml</p>
+</li>
+<li>
+<p>setup.cfg</p>
+</li>
+</ul>
+<h2 id="breadcrumbs">Breadcrumbs</h2>
+<ol>
+<li>swarm</li>
+</ol>
+<p>/</p>
+<h1 id="readmemd">README.md</h1>
+<p>Blame</p>
+<p>Blame</p>
+<h2 id="latest-commit">Latest commit</h2>
+<h2 id="history">History</h2>
+<p>History</p>
+<p>359 lines (262 loc) · 16.8 KB</p>
+<h2 id="breadcrumbs_1">Breadcrumbs</h2>
+<ol>
+<li>swarm</li>
+</ol>
+<p>/</p>
+<h1 id="readmemd_1">README.md</h1>
+<p>Top</p>
+<h2 id="file-metadata-and-controls">File metadata and controls</h2>
+<ul>
+<li>
+<p>Preview</p>
+</li>
+<li>
+<p>Code</p>
+</li>
+<li>
+<p>Blame</p>
+</li>
+</ul>
+<p>359 lines (262 loc) · 16.8 KB</p>
+<p>Raw</p>
+<p><img alt="Swarm Logo" src="/openai/swarm/raw/main/assets/logo.png" /></p>
+<h1 id="swarm-experimental-educational">Swarm (experimental, educational)</h1>
+<p>An educational framework exploring ergonomic, lightweight multi-agent orchestration.</p>
+<p>Warning</p>
+<p>Swarm is currently an experimental sample framework intended to explore ergonomic interfaces for multi-agent systems. It is not intended to be used in production, and therefore has no official support. (This also means we will not be reviewing PRs or issues!)</p>
+<p>The primary goal of Swarm is to showcase the handoff &amp; routines patterns explored in the Orchestrating Agents: Handoffs &amp; Routines cookbook. It is not meant as a standalone library, and is primarily for educational purposes.</p>
+<h2 id="install">Install</h2>
+<p>Requires Python 3.10+</p>
+<div class="highlight"><pre><span></span><code>    pip install git+ssh://git@github.com/openai/swarm.git
+</code></pre></div>
+<p>or</p>
+<div class="highlight"><pre><span></span><code>    pip install git+https://github.com/openai/swarm.git
+</code></pre></div>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre><span></span><code>    from swarm import Swarm, Agent
+    client = Swarm()
+    def transfer_to_agent_b():
+      return agent_b
+
+    agent_a = Agent(
+      name=&quot;Agent A&quot;,
+      instructions=&quot;You are a helpful agent.&quot;,
+      functions=[transfer_to_agent_b],
+    )
+    agent_b = Agent(
+      name=&quot;Agent B&quot;,
+      instructions=&quot;Only speak in Haikus.&quot;,
+    )
+    response = client.run(
+      agent=agent_a,
+      messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;I want to talk to agent B.&quot;}],
+    )
+    print(response.messages[-1][&quot;content&quot;])
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    Hope glimmers brightly,
+    New paths converge gracefully,
+    What can I assist?
+</code></pre></div>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li>Overview</li>
+<li>Examples</li>
+<li>Documentation<ul>
+<li>Running Swarm</li>
+<li>Agents</li>
+<li>Functions</li>
+<li>Streaming</li>
+</ul>
+</li>
+<li>Evaluations</li>
+<li>Utils</li>
+</ul>
+<h1 id="overview">Overview</h1>
+<p>Swarm focuses on making agent coordination and execution lightweight, highly controllable, and easily testable.</p>
+<p>It accomplishes this through two primitive abstractions: Agents and handoffs. An Agent encompasses instructions and tools, and can at any point choose to hand off a conversation to another Agent.</p>
+<p>These primitives are powerful enough to express rich dynamics between tools and networks of agents, allowing you to build scalable, real-world solutions while avoiding a steep learning curve.</p>
+<p>Note</p>
+<p>Swarm Agents are not related to Assistants in the Assistants API. They are named similarly for convenience, but are otherwise completely unrelated. Swarm is entirely powered by the Chat Completions API and is hence stateless between calls.</p>
+<h2 id="why-swarm">Why Swarm</h2>
+<p>Swarm explores patterns that are lightweight, scalable, and highly customizable by design. Approaches similar to Swarm are best suited for situations dealing with a large number of independent capabilities and instructions that are difficult to encode into a single prompt.</p>
+<p>The Assistants API is a great option for developers looking for fully-hosted threads and built in memory management and retrieval. However, Swarm is an educational resource for developers curious to learn about multi-agent orchestration. Swarm runs (almost) entirely on the client and, much like the Chat Completions API, does not store state between calls.</p>
+<h1 id="examples">Examples</h1>
+<p>Check out /examples for inspiration! Learn more about each one in its README.</p>
+<ul>
+<li>basic: Simple examples of fundamentals like setup, function calling, handoffs, and context variables</li>
+<li>triage_agent: Simple example of setting up a basic triage step to hand off to the right agent</li>
+<li>weather_agent: Simple example of function calling</li>
+<li>airline: A multi-agent setup for handling different customer service requests in an airline context.</li>
+<li>support_bot: A customer service bot which includes a user interface agent and a help center agent with several tools</li>
+<li>personal_shopper: A personal shopping agent that can help with making sales and refunding orders</li>
+</ul>
+<h1 id="documentation">Documentation</h1>
+<p><img alt="Swarm Diagram" src="/openai/swarm/raw/main/assets/swarm_diagram.png" /></p>
+<h2 id="running-swarm">Running Swarm</h2>
+<p>Start by instantiating a Swarm client (which internally just instantiates an OpenAI client).</p>
+<div class="highlight"><pre><span></span><code>    from swarm import Swarm
+    client = Swarm()
+</code></pre></div>
+<h3 id="clientrun">client.run()</h3>
+<p>Swarm's run() function is analogous to the chat.completions.create() function in the Chat Completions API – it takes messages and returns messages and saves no state between calls. Importantly, however, it also handles Agent function execution, hand-offs, context variable references, and can take multiple turns before returning to the user.</p>
+<p>At its core, Swarm's client.run() implements the following loop:</p>
+<ol>
+<li>Get a completion from the current Agent</li>
+<li>Execute tool calls and append results</li>
+<li>Switch Agent if necessary</li>
+<li>Update context variables, if necessary</li>
+<li>If no new function calls, return</li>
+</ol>
+<h4 id="arguments">Arguments</h4>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>agent</td>
+<td>Agent</td>
+<td>The (initial) agent to be called.</td>
+<td>(required)</td>
+</tr>
+<tr>
+<td>messages</td>
+<td>List</td>
+<td>A list of message objects, identical to Chat Completions messages</td>
+<td>(required)</td>
+</tr>
+<tr>
+<td>context_variables</td>
+<td>dict</td>
+<td>A dictionary of additional context variables, available to functions and Agent instructions</td>
+<td>{}</td>
+</tr>
+<tr>
+<td>max_turns</td>
+<td>int</td>
+<td>The maximum number of conversational turns allowed</td>
+<td>float("inf")</td>
+</tr>
+<tr>
+<td>model_override</td>
+<td>str</td>
+<td>An optional string to override the model being used by an Agent</td>
+<td>None</td>
+</tr>
+<tr>
+<td>execute_tools</td>
+<td>bool</td>
+<td>If False, interrupt execution and immediately returns tool_calls message when an Agent tries to call a function</td>
+<td>True</td>
+</tr>
+<tr>
+<td>stream</td>
+<td>bool</td>
+<td>If True, enables streaming responses</td>
+<td>False</td>
+</tr>
+<tr>
+<td>debug</td>
+<td>bool</td>
+<td>If True, enables debug logging</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>Once client.run() is finished (after potentially multiple calls to agents and tools) it will return a Response containing all the relevant updated state. Specifically, the new messages, the last Agent to be called, and the most up-to-date context_variables. You can pass these values (plus new user messages) in to your next execution of client.run() to continue the interaction where it left off – much like chat.completions.create(). (The run_demo_loop function implements an example of a full execution loop in /swarm/repl/repl.py.)</p>
+<h4 id="response-fields">Response Fields</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>messages</td>
+<td>List</td>
+<td>A list of message objects generated during the conversation. Very similar to Chat Completions messages, but with a sender field indicating which Agent the message originated from.</td>
+</tr>
+<tr>
+<td>agent</td>
+<td>Agent</td>
+<td>The last agent to handle a message.</td>
+</tr>
+<tr>
+<td>context_variables</td>
+<td>dict</td>
+<td>The same as the input variables, plus any changes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="agents">Agents</h2>
+<p>An Agent simply encapsulates a set of instructions with a set of functions (plus some additional settings below), and has the capability to hand off execution to another Agent.</p>
+<p>While it's tempting to personify an Agent as "someone who does X", it can also be used to represent a very specific workflow or step defined by a set of instructions and functions (e.g. a set of steps, a complex retrieval, single step of data transformation, etc). This allows Agents to be composed into a network of "agents", "workflows", and "tasks", all represented by the same primitive.</p>
+<h2 id="agent-fields">Agent Fields</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>str</td>
+<td>The name of the agent.</td>
+<td>"Agent"</td>
+</tr>
+<tr>
+<td>model</td>
+<td>str</td>
+<td>The model to be used by the agent.</td>
+<td>"gpt-4o"</td>
+</tr>
+<tr>
+<td>instructions</td>
+<td>str or func() -&gt; str</td>
+<td>Instructions for the agent, can be a string or a callable returning a string.</td>
+<td>"You are a helpful agent."</td>
+</tr>
+<tr>
+<td>functions</td>
+<td>List</td>
+<td>A list of functions that the agent can call.</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>tool_choice</td>
+<td>str</td>
+<td>The tool choice for the agent, if any.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instructions">Instructions</h3>
+<p>Agent instructions are directly converted into the system prompt of a conversation (as the first message). Only the instructions of the active Agent will be present at any given time (e.g. if there is an Agent handoff, the system prompt will change, but the chat history will not.)</p>
+<div class="highlight"><pre><span></span><code>    agent = Agent(
+      instructions=&quot;You are a helpful agent.&quot;
+    )
+</code></pre></div>
+<p>The instructions can either be a regular str, or a function that returns a str. The function can optionally receive a context_variables parameter, which will be populated by the context_variables passed into client.run().</p>
+<div class="highlight"><pre><span></span><code>    def instructions(context_variables):
+      user_name = context_variables[&quot;user_name&quot;]
+      return f&quot;Help the user, {user_name}, do whatever they want.&quot;
+    agent = Agent(
+      instructions=instructions
+    )
+    response = client.run(
+      agent=agent,
+      messages=[{&quot;role&quot;:&quot;user&quot;, &quot;content&quot;: &quot;Hi!&quot;}],
+      context_variables={&quot;user_name&quot;:&quot;John&quot;}
+    )
+    print(response.messages[-1][&quot;content&quot;])
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    Hi John, how can I assist you today?
+</code></pre></div>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>Swarm Agents can call python functions directly.</li>
+<li>Function should usually return a str (values will be attempted to be cast as a str).</li>
+<li>If a function returns an Agent, execution will be transferred to that Agent.</li>
+<li>If a function defines a context_variables parameter, it will be populated by the context_variables passed into client.run().</li>
+</ul>
+<div class="highlight"><pre><span></span><code>    def greet(context_variables, language):
+      user_name = context_variables[&quot;user_name&quot;]
+      greeting = &quot;Hola&quot; if language.lower() == &quot;spanish&quot; else &quot;Hello&quot;
+      print(f&quot;{greeting}, {user_name}!&quot;)
+      return &quot;Done&quot;
+    agent = Agent(
+      functions=[greet]
+    )
+    client.run(
+      agent=agent,
+      messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Usa greet() por favor.&quot;}],
+      context_variables={&quot;user_name&quot;: &quot;John&quot;}
+    )
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    Hola, John!
+</code></pre></div>
+<ul>
+<li>If an Agent function call has an error (missing function, wrong argument, error) an error response will be appended to the chat so the Agent can recover gracefully.</li>
+<li>If multiple functions are called by the Agent, they will be executed in that order.</li>
+</ul>
+<h3 id="handoffs-and-updating-context-variables">Handoffs and Updating Context Variables</h3>
+<p>An Agent can hand off to another Agent by returning it in a function.</p>
+<div class="highlight"><pre><span></span><code>    sales_agent = Agent(name=&quot;Sales Agent&quot;)
+    def transfer_to_sales():
+      return sales_agent
+    agent = Agent(functions=[transfer_to_sales])
+    response = client.run(agent, [{&quot;role&quot;:&quot;user&quot;, &quot;content&quot;:&quot;Transfer me to sales.&quot;}])
+    print(response.agent.name)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    Sales Agent
+</code></pre></div>
+<p>It can also update the context_variables by returning a more complete Result object. This can also contain a value and an agent, in case you want a single function to return a value, update the agent, and update the context variables (or any subset of the three).</p>
+<div class="highlight"><pre><span></span><code>    sales_agent = Agent(name=&quot;Sales Agent&quot;)
+    def talk_to_sales():
+      print(&quot;Hello, World!&quot;)
+      return Result(
+        value=&quot;Done&quot;,
+        agent=sales_agent,
+        context_variables={&quot;department&quot;: &quot;sales&quot;}
+      )
+    agent = Agent(functions=[talk_to_sales])
+    response = client.run(
+      agent=agent,
+      messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Transfer me to sales&quot;}],
+      context_variables={&quot;user_name&quot;: &quot;John&quot;}
+    )
+    print(response.agent.name)
+    print(response.context_variables)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    Sales Agent
+    {&#39;department&#39;: &#39;sales&#39;, &#39;user_name&#39;: &#39;John&#39;}
+</code></pre></div>
+<p>Note</p>
+<p>If an Agent calls multiple functions to hand-off to an Agent, only the last handoff function will be used.</p>
+<h3 id="function-schemas">Function Schemas</h3>
+<p>Swarm automatically converts functions into a JSON Schema that is passed into Chat Completions tools.</p>
+<ul>
+<li>Docstrings are turned into the function description.</li>
+<li>Parameters without default values are set to required.</li>
+<li>Type hints are mapped to the parameter's type (and default to string).</li>
+<li>Per-parameter descriptions are not explicitly supported, but should work similarly if just added in the docstring. (In the future docstring argument parsing may be added.)</li>
+</ul>
+<div class="highlight"><pre><span></span><code>    def greet(name, age: int, location: str = &quot;New York&quot;):
+      &quot;&quot;&quot;Greets the user. Make sure to get their name and age before calling.
+      Args:
+       name: Name of the user.
+       age: Age of the user.
+       location: Best place on earth.
+      &quot;&quot;&quot;
+      print(f&quot;Hello {name}, glad you are {age} in {location}!&quot;)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    {
+      &quot;type&quot;: &quot;function&quot;,
+      &quot;function&quot;: {
+       &quot;name&quot;: &quot;greet&quot;,
+       &quot;description&quot;: &quot;Greets the user. Make sure to get their name and age before calling.\n\nArgs:\n  name: Name of the user.\n  age: Age of the user.\n  location: Best place on earth.&quot;,
+       &quot;parameters&quot;: {
+         &quot;type&quot;: &quot;object&quot;,
+         &quot;properties&quot;: {
+          &quot;name&quot;: {&quot;type&quot;: &quot;string&quot;},
+          &quot;age&quot;: {&quot;type&quot;: &quot;integer&quot;},
+          &quot;location&quot;: {&quot;type&quot;: &quot;string&quot;}
+         },
+         &quot;required&quot;: [&quot;name&quot;, &quot;age&quot;]
+       }
+      }
+    }
+</code></pre></div>
+<h2 id="streaming">Streaming</h2>
+<div class="highlight"><pre><span></span><code>    stream = client.run(agent, messages, stream=True)
+    for chunk in stream:
+      print(chunk)
+</code></pre></div>
+<p>Uses the same events as Chat Completions API streaming. See process_and_print_streaming_response in /swarm/repl/repl.py as an example.</p>
+<p>Two new event types have been added:</p>
+<ul>
+<li>{"delim":"start"} and {"delim":"end"}, to signal each time an Agent handles a single message (response or function call). This helps identify switches between Agents.</li>
+<li>{"response": Response} will return a Response object at the end of a stream with the aggregated (complete) response, for convenience.</li>
+</ul>
+<h1 id="evaluations">Evaluations</h1>
+<p>Evaluations are crucial to any project, and we encourage developers to bring their own eval suites to test the performance of their swarms. For reference, we have some examples for how to eval swarm in the airline, weather_agent and triage_agent quickstart examples. See the READMEs for more details.</p>
+<h1 id="utils">Utils</h1>
+<p>Use the run_demo_loop to test out your swarm! This will run a REPL on your command line. Supports streaming.</p>
+<div class="highlight"><pre><span></span><code>    from swarm.repl import run_demo_loop
+    ...
+    run_demo_loop(agent, stream=True)
+</code></pre></div>
+<h1 id="core-contributors">Core Contributors</h1>
+<ul>
+<li>Ilan Bigio - ibigio</li>
+<li>James Hills - jhills20</li>
+<li>Shyamal Anadkat - shyamal-anadkat</li>
+<li>Charu Jaiswal - charuj</li>
+<li>Colin Jarvis - colin-openai</li>
+<li>Katia Gil Guzman - katia-openai</li>
+</ul>
+<h2 id="footer">Footer</h2>
+<p>© 2024 GitHub, Inc. </p>
+<h3 id="footer-navigation">Footer navigation</h3>
+<ul>
+<li>Terms</li>
+<li>Privacy</li>
+<li>Security</li>
+<li>Status</li>
+<li>Docs</li>
+<li>Contact</li>
+<li>Manage cookies </li>
+<li>Do not share my personal information </li>
+</ul>
+<p>You can’t perform that action at this time. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
